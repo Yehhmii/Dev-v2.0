@@ -6,7 +6,8 @@
       "use": "@vercel/static-build"
     },
     {
-      "src": "server/index.js"
+      "src": "server/index.js",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
