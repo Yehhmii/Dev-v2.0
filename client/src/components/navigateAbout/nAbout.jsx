@@ -11,7 +11,7 @@ export default function nAbout() {
         e.preventDefault();
 
         try{
-            const response = await fetch('http://localhost:5000/request-resume', {
+            const response = await fetch('/api/request-resume', {
                 method: 'POST',
                 headers: {
                     'content-Type': 'application/json',
