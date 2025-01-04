@@ -10,7 +10,7 @@ import iting9 from '../../images/sup1.png';
 import iting10 from '../../images/sup2.png';
 import iting11 from '../../images/sup3.png';
 import iting12 from '../../images/sup4.png';
-import music1 from '../../images/music1.png'
+import music1 from '../../images/Music1.png'
 import music2 from '../../images/music2.png'
 import music3 from '../../images/music3.png'
 import flight1 from '../../images/flight1.png';
