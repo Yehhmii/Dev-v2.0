@@ -1,5 +1,5 @@
 import React from 'react';
-import './ProjectDetails.css';
+import './projectDetails.css';
 import Projectbtn from './projectbtn.jsx'
 import Nav from '../nav/nav.jsx';
 
