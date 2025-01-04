@@ -7,7 +7,7 @@
     },
     {
       "src": "server/index.js",
-      "use": "@vercel/node-server"
+      "use": "@vercel/serverless-function"
     }
   ],
   "routes": [
