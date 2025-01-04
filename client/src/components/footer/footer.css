@@ -1,0 +1,142 @@
+.footerContainer{
+    width: 100%;
+    background-color: #212121;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+.logo2{
+    margin-top: 50px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.logo2 img{
+    width: 100px;
+    border-radius: 50%;
+}
+.logotext2{
+    color: #fff;
+    font-family: Fraunces;
+}
+.spa{
+    color: #bdf1f6;
+}
+.textAbout{
+    color: #cccbcb;
+    margin-left: 20px;
+}
+.usefulLink{
+    margin-top: 30px;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 20px;
+}
+.links a{
+    text-decoration: none;
+    color: #bdf1f6;
+    transition: 0.5s ease-in-out;
+}
+.links a:hover{
+    color: rgba(226, 0, 0, 0.5);
+}
+.use{
+    text-transform: uppercase;
+    color: #eee;
+    margin-left: 20px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+.followUs{
+    margin-top: 30px;
+}
+.US{
+    text-transform: uppercase;
+    color: #eee;
+    margin-left: 20px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;    
+}
+.followContainer{
+    margin-left: 20px;
+    margin-bottom: 20px;    
+    display: flex;
+    gap: 10px;
+}
+.linkin{
+    width: 60px;
+    height: 50px;
+    border: 1px solid #eee;
+    cursor: pointer;
+}
+.linkin img{
+    width: 30px;
+    margin: 10px 13px;
+    background-color: #bdf1f6;
+    border-radius: 7px;
+    transition: 0.3s ease-in;
+}
+.linkin img:hover{
+    background-color: rgba(226, 0, 0, 0.5);
+
+}
+.contactInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footP{
+    color: #cccbcb;
+    margin-left: 20px;
+}
+.copyright{
+    background-color: #212121;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.cpp{
+    color: #eee;
+    text-align: center;
+}
+.cp{
+    color: #bdf1f6;
+    
+}
+
+
+
+
+@media screen and (min-width: 1085px) {
+    .footerContainer{
+        display: flex;
+        flex-direction: row;
+        padding-top: 5%;
+        padding-bottom: 6%;
+    }
+    .logo2 img{
+        width: 100px;
+        margin-top: 10px;
+        border-radius: 50%;
+        margin-left: 50px;
+    }
+    .logo2{
+        margin-top: 0px !important;
+    }
+    .usefulLink{
+        margin-top: 0;
+    }
+    .followUs{
+        margin-top: 0;
+    }
+    .fname, .email{
+        width: 80%;
+    }
+    .followContainer{
+        flex-direction: column;
+    }
+}

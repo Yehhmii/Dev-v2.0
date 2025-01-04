@@ -1,0 +1,134 @@
+
+.topHeading{
+    margin-top: 5%;
+    background-color: #fff;
+    color: #62be62;
+    padding: 5px;
+    margin-left: 400px;
+    max-width: 500px;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+}
+.messageIcon{
+    width: 550px;
+    height: 400px;
+    background: linear-gradient(to bottom, #2c3e50, #11110f);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    margin-left: 400px;
+}
+.messageIcon p{
+    color: #ffffff;
+    font-size: 18px;
+    padding: 20px;
+    padding-top: 50px;
+}
+.aboutPicture {
+    position: relative; 
+    width: 350px; 
+    height: 400px; 
+    top: -20px;
+    margin-left: 800px; 
+    overflow: hidden; 
+    border-radius: 20px; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(0); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.aboutPicture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 20px; 
+    cursor: pointer;
+
+}
+
+.aboutPicture:hover {
+    transform: translateY(-15px); 
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
+}
+
+.aboutPicture:hover img {
+    filter: brightness(1.1) contrast(1.2); /* Slightly enhance image on hover */
+}
+
+
+.aboutBtn{
+    margin-top: -120px;
+    margin-left: 1300px;
+}
+
+@media screen and (max-width: 1350px) {
+    .topHeading{
+        margin-left: 200px;
+    }
+    .messageIcon{
+        margin-left: 200px;
+    }
+    .aboutPicture{
+        margin-left: 600px;
+    }
+    .aboutBtn{
+        margin-left: 1000px;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .topHeading{
+        margin-left: 100px;
+    }
+    .messageIcon{
+        margin-left: 100px;
+    }
+    .aboutPicture{
+        margin-left: 500px;
+    }
+    .aboutBtn{
+        margin-left: 900px;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .aboutPicture{
+        margin-left: 100px;
+    }
+    .aboutBtn{
+        margin-left: 500px;
+    }
+}
+
+@media screen and (max-width: 685px) {
+    .topHeading{
+        max-width: 200px;    
+    }
+    .messageIcon{
+        width: 400px;
+    }
+    .aboutPicture{
+        margin-left: 30px;
+    }
+    .aboutBtn{
+        margin-left: 400px;
+    }
+}
+
+@media screen and (max-width: 545px) {
+    .topHeading{
+        margin-left: 30px;
+        max-width: 200px;    
+    }
+    .messageIcon{
+        margin-left: 30px;
+        width: 300px;
+    }
+    .aboutPicture{
+        margin-top: 20px;
+        margin-left: 30px;
+        width: 300px;
+    }
+    .aboutBtn{
+        margin-top: -490px;
+        margin-left: 32px;
+    }
+}

@@ -1,0 +1,147 @@
+
+.cardAbout2{
+    margin: 5% auto;
+    padding: 2em;
+    width: 700px;
+    background: #1c1f2b;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+.cardAbout2 {
+    color: #ffffff;
+}
+.cardAbout2 h3{
+    font-size: 30px;
+}
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+
+  .cardAbout2::after, .cardAbout2::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), #11110f, #eae0d5, #2c3e50, #bbdefb, #2c3e50);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
+  }
+  .cardAbout2::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+  }
+  @keyframes spin{
+    from{
+      --angle: 0deg;
+    }
+    to{
+      --angle: 360deg;
+    }
+  }
+.cardResumeContainer{
+    display: flex;
+    margin-bottom: 20px;
+
+}
+.cardResume{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background: linear-gradient(45deg, #a5fecb, #20bdff);
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+}
+.circle{
+    border-radius: inherit;
+    position: absolute;
+    background: linear-gradient(#ffffff27, #ffffff28);
+    box-shadow: -5px 5px 10px #64646f33;
+    transition: all 1s ease-in-out;
+}
+.circle:nth-child(1){
+    inset: 25px;
+}
+.circle:nth-child(2){
+    inset: 50px;
+}
+.circle:nth-child(3){
+    inset: 75px;
+}
+.circle:nth-child(4){
+    inset: 100px;
+}
+.circle:nth-child(5){
+    inset: 125px;
+}
+.cardResume:hover{
+    transform: rotate3d(1, 1, 0, 60deg);
+}
+.cardResume:hover .circle:nth-child(1){
+    transform: translate3d(0, 0, 30px);
+}
+
+.circle:nth-child(1){
+    transform: translate3d(0, 0, 30px);
+}
+.circle:nth-child(2){
+    transform: translate3d(0, 0, 60px);
+}
+.circle:nth-child(3){
+    transform: translate3d(0, 0, 90px);
+}
+.circle:nth-child(4){
+    transform: translate3d(0, 0, 120px);
+}
+.circle:nth-child(5){
+    transform: translate3d(0, 0, 150px);
+}
+
+.resume{
+    font-size: 18px;
+    font-weight: 500;
+    color: #4a4a4a; 
+    text-align: center; 
+    background: linear-gradient(90deg, #e3f2fd, #bbdefb); 
+    padding: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    margin: 50px auto; 
+    max-width: 400px; 
+}
+
+.resumeInput{
+    border: navy;
+    padding: 15px;
+}
+.move{
+    margin-top: 40px;
+}
+@media screen and (max-width: 810px) {
+    .cardAbout2{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .cardResumeContainer{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 444px) {
+    .cardAbout2{
+        width: 200px;
+    }
+    .cardResume{
+        width: 200px;
+        height: 200px;
+    }
+}

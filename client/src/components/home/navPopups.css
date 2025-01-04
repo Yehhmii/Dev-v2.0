@@ -1,0 +1,134 @@
+.navItemsContainer{
+    margin-top: 100px;
+}
+.navItems{
+    display: flex;
+    gap: 300px;
+    margin-left: 150px;
+}
+.learnDiv{
+    margin-left: -2px;
+}
+.ExploreDiv{
+    margin-left: -53px;
+}
+.AndDiv{
+    margin-left: -52px;
+}
+ul li{
+    list-style: none;
+    cursor: pointer;
+    color: #eeeeee;
+}
+.navLists{
+    display: flex;
+    gap: 300px;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 150px;
+
+}
+
+.navLists li {
+    list-style: none;
+    cursor: pointer;
+    color: #eeeeee;
+    position: relative;
+    font-size: 18px;
+    text-transform: capitalize;
+    transition: color 0.3s ease;
+}
+
+.navLists li::after {
+    content: "";
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #62be62;
+    transition: width 0.3s ease-in-out;
+}
+
+.navLists li:hover {
+    color: #62be62; /* Change text color on hover */
+}
+
+.navLists li:hover::after {
+    width: 100%; /* Full-width green underline on hover */
+}
+.navLists li a{
+    text-decoration: none;
+    color: #eeeeee;
+
+}
+
+@media screen and (max-width: 1280px ) {
+    .navItems{
+        gap: 150px;
+    }
+    .navLists{
+        gap: 150px;
+    }
+}
+
+@media  screen and (max-width: 950px){
+    .navItemsContainer{
+        margin-top: 90px;
+    }
+    .navItems{
+        gap: 90px;
+    }
+    .navLists{
+        gap: 90px;
+    }
+}
+
+@media  screen and (max-width: 635px){
+    .navItems{
+        margin-left: 50px;
+    }
+    .navLists{
+        margin-left: 50px;
+    }
+}
+
+@media  screen and (max-width: 540px){
+    .navItemsContainer {
+        margin-top: 100px;
+        display: flex;
+    }
+    .learnDiv{
+        margin-left: 0px;
+    }
+    .ExploreDiv{
+        margin-left: 0px;
+    }
+    .AndDiv{
+        margin-left: 0px;
+    }
+      nav {
+        display: grid;
+        grid-template-columns: auto auto; 
+        gap: 20px; 
+      }
+      
+      .navItems {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+
+      }
+      .navItems h3{
+        margin: 0;
+      }
+      .navLists {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+      }
+      
+            
+}

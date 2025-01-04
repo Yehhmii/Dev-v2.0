@@ -1,0 +1,153 @@
+.clipCardContainer{
+    background-color: #eae0d5;
+    margin-top: 5%;
+}
+.clipHeading{
+    margin: 0 auto;
+    background-color: #fff;
+    color: #62be62;
+    padding: 5px;
+    max-width: 500px;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+}
+.clipHeading h3{
+    padding-top: 50px;
+}
+.mainClipsContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 20px;
+}
+.clipCardContainer1{
+    display: flex;
+}
+.clipCardContainer2{
+    display: flex;
+}
+.clipCardContainer3{
+    display: flex;
+}
+.leftClip{
+    margin-top: 2%;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to bottom, #2c3e50, #11110f);
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+}
+.leftCard{
+    position: relative; 
+    width: 300px; 
+    height: 250px; 
+    padding: 20px;
+    overflow: hidden; 
+    border-radius: 20px; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(0); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    cursor: pointer;
+}
+.leftCard:hover{
+    transform: translateY(-15px); 
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+}
+.rightClip{
+    order: 1;
+    margin-top: 2%;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to bottom, #2c3e50, #11110f);
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+}
+.clipCardContainer4{
+    display: flex;
+    justify-content: flex-end;
+}
+.clipCardContainer5{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.clipCardContainer6{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.rightCard{
+    order: 0;
+    position: relative; 
+    width: 300px; 
+    height: 250px; 
+    padding: 20px;
+    overflow: hidden; 
+    border-radius: 20px; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(0); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    cursor: pointer;
+}
+.rightCard:hover{
+    transform: translateY(-15px); 
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+.card {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .card.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  
+  @media screen and (max-width: 1100px) {
+    .mainClipsContainer{
+        display: inline;
+    }
+  }
+
+  @media screen and (max-width: 560px) {
+    .clipCardContainer{
+        margin-top: 90%;
+    }
+    .leftClip{
+        width: 100px;
+        margin-top: 120px;
+    }
+    .leftCard{
+        width: 200px;
+        margin-top: 70px;
+    }
+    .rightClip{
+        width: 100px;
+        margin-top: 120px;
+    }
+    .rightCard{
+        width: 200px;
+        margin-top: 70px;
+    }
+  }
+
+  @media screen and (max-width: 375px){
+    .clipCardContainer{
+        margin-top: 150%;
+    }
+    .leftClip{
+        width: 60px;
+        margin-top: 120px;
+
+    }
+    .leftCard{
+        margin-top: 70px;
+    }
+    .rightClip{
+        margin-top: 120px;
+        width: 60px;
+    }
+    .rightCard{
+        margin-top: 70px;
+    }
+  }
