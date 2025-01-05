@@ -3,7 +3,7 @@ const nodemailer = require('nodemailer');
 module.exports = async (req, res) => {
     // Set CORS headers
     res.setHeader('Access-Control-Allow-Credentials', true)
-    res.setHeader('Access-Control-Allow-Origin', 'https://dev-v2-1.vercel.app'); 
+    res.setHeader('Access-Control-Allow-Origin', '*') 
     res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT')
     res.setHeader(
       'Access-Control-Allow-Headers',
