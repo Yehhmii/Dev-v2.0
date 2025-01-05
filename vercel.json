@@ -22,6 +22,11 @@
         "src": "/(.*)",
         "dest": "/client/dist/$1"
       }
-    ]
+    ],
+    "cors": {
+        "allowedOrigins": ["https://dev-v2-1.vercel.app"],
+        "methods": ["GET", "POST", "PUT", "DELETE"],
+        "allowedHeaders": ["Content-Type", "Authorization"]
+      }
   }
   
