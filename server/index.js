@@ -11,7 +11,7 @@ const PORT = 5000;
 // Middleware
 app.use(
     cors({
-        origin: "https://dev-v2-1.vercel.app/",
+        origin: "https://dev-v2-1.vercel.app",
         methods: ["POST", "GET"],
         credentials: true
     })
