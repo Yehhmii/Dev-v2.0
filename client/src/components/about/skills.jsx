@@ -44,7 +44,7 @@ export default function Skills() {
               data-id="1"
             >
               <h3>Software Engineering</h3>
-              <p>
+              <p className='skillCard'>
                 As a software engineer, I specialize in designing, developing,
                 and maintaining software solutions that solve complex problems
                 and improve user experiences. I am adept at optimizing
@@ -62,7 +62,7 @@ export default function Skills() {
               data-id="2"
             >
               <h3>Full Stack Developer</h3>
-              <p>
+              <p className='skillCard'>
                 With expertise in both front-end and back-end technologies, MERN Stack and PHP I
                 develop complete web applications from scratch. I ensure smooth
                 integration between the user interface and server-side
@@ -80,8 +80,8 @@ export default function Skills() {
               data-id="3"
             >
               <h3>Creative Speaking</h3>
-              <p>
-              Skilled in effective communication, I excel at analyzing complex problems and translating them into clear, actionable insights. My ability to articulate ideas with precision ensures that diverse audiences can easily grasp intricate concepts. I thrive on delivering engaging presentations and explanations, fostering understanding and collaboration in any setting. I adapt my approach to ensure maximum impact and resonance with the audience.
+              <p className='skillCard'>
+              Skilled in effective communication, I excel at analyzing complex problems and translating them into clear, actionable insights. My ability to articulate ideas with precision ensures that diverse audiences can easily grasp intricate concepts. I adapt my approach to ensure maximum impact and resonance with the audience.
               </p>
             </div>
           </div>
@@ -96,7 +96,7 @@ export default function Skills() {
               data-id="4"
             >
               <h3>MERN Stack</h3>
-              <p>
+              <p className='skillCard'>
                 As a MERN stack developer, I work with MongoDB, Express.js,
                 React, and Node.js to build high-performance web applications. I
                 create responsive, real-time solutions that meet modern web
@@ -114,7 +114,7 @@ export default function Skills() {
               data-id="5"
             >
               <h3>Python Developer</h3>
-              <p>
+              <p className='skillCard'>
                 I utilize Python for building clean and efficient code,
                 particularly for web development. I envision automation, data
                 analysis, and machine learning. With Python's versatility, I
@@ -132,7 +132,7 @@ export default function Skills() {
               data-id="6"
             >
               <h3>Tutor</h3>
-              <p>
+              <p className='skillCard'>
                 As a tutor, I take pride in helping students grasp complex
                 technical concepts and guiding them to become proficient
                 developers. I provide personalized learning experiences, making

@@ -151,3 +151,13 @@
         margin-top: 70px;
     }
   }
+
+  @media screen and (max-width: 375px) {
+    .card>h3{
+        margin: 0;
+    }
+    .skillCard{
+        margin-top: 5px;
+        font-size: 16px;
+    }
+  }
