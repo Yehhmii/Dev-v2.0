@@ -9,8 +9,19 @@ app.use(express.json());
 const PORT = 5000;
 
 // Middleware
-app.use(cors());
+app.use(
+    cors({
+        origin: "https://dev-v2-1.vercel.app/",
+        methods: ["POST", "GET"],
+        credentials: true
+    })
+);
 app.use(bodyParser.json());
+
+// default on screen
+app.get("/", (req, res) => {
+    res.json("Hello")
+})
 
 // Route to handle resume requests
 app.post('/request-resume', async (req, res) => {
