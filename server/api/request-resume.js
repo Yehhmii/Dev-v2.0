@@ -1,5 +1,14 @@
 const nodemailer = require('nodemailer');
+const express = require('express')
+const cors = require('cors');
 
+const app = express()
+app.use(
+    cors({
+        origin: "https://dev-v2-1.vercel.app/",
+        "methods": ["POST", "GET"]
+    })
+)
 module.exports = async (req, res,) => {
 
 
