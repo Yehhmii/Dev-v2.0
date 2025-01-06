@@ -24,7 +24,7 @@ app.get("/", (req, res) => {
 })
 
 // Route to handle resume requests
-app.post('/request-resume', async (req, res) => {
+app.post('/api/request-resume', async (req, res) => {
     const { email } = req.body;
 
     // Validate request body
