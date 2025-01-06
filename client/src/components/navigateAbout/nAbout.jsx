@@ -11,7 +11,7 @@ export default function nAbout() {
         e.preventDefault();
 
         try{
-            const response = await fetch('https://dev-v2server.vercel.app/api/request-resume', {
+            const response = await fetch('api/request-resume', {
                 method: 'POST',
                 headers: {
                     'content-Type': 'application/json',
