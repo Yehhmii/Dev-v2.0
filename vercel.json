@@ -19,12 +19,16 @@
         "dest": "server/api/$1",
         "methods": ["GET","OPTIONS","PATCH","DELETE","POST","PUT"],
         "headers": {
-        "Access-Control-Allow-Origin": "*"
+            "Access-Control-Allow-Origin": "*"
         }
       },
       {
         "src": "/(.*)",
-        "dest": "/client/dist/$1"
+        "dest": "/client/dist/$1",
+        "methods": ["GET","OPTIONS","PATCH","DELETE","POST","PUT"],
+        "headers": {
+            "Access-Control-Allow-Origin": "*"
+        }
       }
     ]
   }

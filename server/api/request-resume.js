@@ -1,6 +1,6 @@
 const nodemailer = require('nodemailer');
 
-module.exports = async (req, res) => {
+module.exports = async (req, res,) => {
 
 
     if (req.method === 'OPTIONS') {
