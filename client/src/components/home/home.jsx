@@ -39,7 +39,7 @@ export default function home() {
           <div className='hometext'>
             <div className='textDivs'>
               <h2>Hi, Meet</h2>
-              <h3>Francisco Abhulimen</h3>
+              <h3>Abhulimen Francisco</h3>
               <p>A Progressive</p>
             </div>
             <div>
