@@ -1,5 +1,6 @@
 .clipCardContainer{
-    background-color: #8b5e3c;
+    background: linear-gradient(to bottom, #2c3e50, #11110f);
+
     margin-top: 5%;
 }
 .clipHeading{
@@ -131,7 +132,11 @@
         margin-top: 70px;
     }
   }
-
+  @media screen and (max-width: 410px){
+    .skillCard{
+        font-size: 12px;
+    }
+  }
   @media screen and (max-width: 375px){
     .clipCardContainer{
         margin-top: 150%;

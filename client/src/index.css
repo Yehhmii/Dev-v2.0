@@ -14,3 +14,10 @@ body{
     background-color: #eeeeee;
     /* overflow-x: hidden !important; */
 }
+body {
+    overflow-x: hidden; /* Disable horizontal scrolling */
+  }
+  
+  html {
+    overflow-x: hidden; /* Prevent root-level overflow */
+  }
