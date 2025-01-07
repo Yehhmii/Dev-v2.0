@@ -128,9 +128,6 @@
 }
 
 @media screen and (max-width: 545px) {
-    .aboutContainer{
-
-    }
     .topHeading{
         margin-left: 30px;
         max-width: 200px;    
@@ -152,9 +149,7 @@
         margin-top: -490px;
         margin-left: 162px;
     }
-    .aboutPicture img{
-        /* margin-top: 20px; */
-    }
+    
 }
 @media screen and (max-width: 335px) {
     .messageIcon{

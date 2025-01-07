@@ -1,7 +1,8 @@
 .clipCardContainer{
-    background: linear-gradient(to bottom, #2c3e50, #11110f);
-
+    background: linear-gradient(to bottom, #2c3e50, #1d1d1a);
     margin-top: 5%;
+    margin-bottom: 5%;
+    padding-bottom: 5%;
 }
 .clipHeading{
     margin: 0 auto;
@@ -157,7 +158,7 @@
         margin-top: 70px;
     }
     .skillCard{
-        font-size: 15px;
+        font-size: 12px;
     }
   }
 
@@ -167,6 +168,6 @@
     }
     .skillCard{
         margin-top: 5px;
-        font-size: 15px;
+        font-size: 12px;
     }
   }
