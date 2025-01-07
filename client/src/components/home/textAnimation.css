@@ -27,3 +27,11 @@
     opacity: 0;
     transform: translateX(-100%);
 }
+
+@media  screen and (max-width: 320px) {
+    .textContainer{
+        top: 70%;
+        margin-top: 0px;
+
+    }
+}

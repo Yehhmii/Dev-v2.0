@@ -42,7 +42,7 @@ export default function home() {
               <h3>Abhulimen Francisco</h3>
               <p>A Progressive</p>
             </div>
-            <div>
+            <div className='textANIME'>
               <TextAnimation />
             </div>
           </div>

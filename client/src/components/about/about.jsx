@@ -6,7 +6,7 @@ import Btn from './btn';
 
 export default function About() {
   const { ref: aboutRef, inView } = useInView({
-    threshold: 0.2, // Trigger when 20% of the component is visible
+    threshold: 0.1, // Trigger 
   });
 
   return (
