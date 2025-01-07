@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './nAbout.css';
 import Nav from '../nav/nav.jsx'
 import Footer from '../footer/footer.jsx'
+import OtherSkills from './otherSkills.jsx';
 
 export default function nAbout() {
     const [email, setEmail] = useState()
@@ -43,6 +44,9 @@ export default function nAbout() {
             I build strong relationships with both technical and non-technical personnel, facilitating effective communication, teaching, and learning. I am dedicated to completing tasks efficiently, contributing to team success, and adapting quickly to new challenges and policies. My willingness to take on any task ensures that I am always ready to support team objectives and drive project success.<br />
             I began the world of tech studying software engineering as a student, wasn't really into it at the beginning, not untill my third year in the university when I feel in love with tech, but it felt like I have wasted my time already so I wasted no more time and left no hour idol. I would say it wasn't an easy path especially at the beginning cause I was in 'tutorial hell' for a long time till I started working on projects which really helped me advance and working my IT at Neo clouds technologies also helped me to see the world of tech from another angle, I can say I'm still working hard till this day and my story is a continuous one so keep in touch.</p>
         </div>
+        <div>
+            <OtherSkills />
+        </div>
         <div className='cardResumeContainer'>
             <div className='cardResume'>
                 <div className='circle'></div>
@@ -66,7 +70,6 @@ export default function nAbout() {
                 </form>
                 {message && <p className="message">{message}</p>}
             </div>
-
         </div>
         <div>
             <Footer />

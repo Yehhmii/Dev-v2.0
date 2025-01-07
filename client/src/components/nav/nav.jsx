@@ -1,30 +1,52 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './nav.css';
-import logo from '../../images/logo.png'
-import envelope from '../../images/envelope-at.svg'
-import telephone from '../../images/telephone.svg'
-import { Link } from 'react-router-dom'
+import logo from '../../images/logo.png';
+import downGif from '../../images/down.gif'
+import { Link } from 'react-router-dom';
+import Scroll from 'react-scroll';
 
+export default function Nav() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const ScrollLink = Scroll.Link;
 
-export default function nav() {
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
   return (
     <div>
-        <div className='upperNavContainer'>
-            <div className='logo'>
-                <Link to='/'>
-                    <img src={logo} alt="Dev logo" />
-                </Link>
-            </div>
-            <div className='upperIcons'>
-                <div className='upperphone'>
-                    <img src={telephone} alt="envelope icon" /><h3>+2348158619466</h3>
-                </div>
-                <div className='upperemail'>
-                    <img src={envelope} alt="telephone icon" /><h3>yehhmiihithub@gmail.com</h3>
-                </div>
-            </div>
+      <div className="upperNavContainer">
+        <div className="logo">
+          <Link to="/">
+            <img src={logo} alt="Dev logo" />
+          </Link>
         </div>
+        <div className="menuIcon" onClick={toggleMenu}>
+          <img src={downGif} alt="" />
+        </div>
+        <ul className={`navLists ${menuOpen ? 'active' : ''}`}>
+          <li>
+            <Link to="/">
+              <span>Home</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/about">
+              <span>About</span>
+            </Link>
+          </li>
+          <li>
+            <ScrollLink to="target" smooth={true}>
+              <span>Skills</span>
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink to="targetContact" smooth={true}>
+              <span>Contact</span>
+            </ScrollLink>
+          </li>
+        </ul>
+      </div>
     </div>
-  )
+  );
 }

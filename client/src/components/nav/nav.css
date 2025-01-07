@@ -1,81 +1,118 @@
-.upperNavContainer{
+.upperNavContainer {
     display: flex;
     justify-content: space-between;
-    position: relative;
-    top: 30px;
+    align-items: center;
+    padding: 20px 50px;
+    background: linear-gradient(90deg, #11110f, #2c3e50, #8b5e3c);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
-.logo Link{
-    text-decoration: none;
-}
-.logo img{
-    width: 60px;
+
+.logo img {
+    width: 70px;
     border-radius: 50%;
-    margin-left: 40px;
-    background-color: #ffffff;
+    transition: transform 0.3s ease;
 }
-.upperIcons{
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+.menuIcon {
+    display: none;
+    cursor: pointer;
+}
+
+.menuIcon img {
+    width: 32px;
+    height: 32px;
+}
+
+.navLists {
     display: flex;
+    list-style: none;
     gap: 90px;
-    margin-right: 20px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
-.upperIcons h3{
-    font-size: 15px;
-    color: #eeeeee;
-}
-.upperphone{
-    display: flex;
-    gap: 10px;
-}
-.upperphone img{
+
+.navLists li {
     position: relative;
-    bottom: 10px;
-    width: 30px;
-}
-.upperemail{
-    display: flex;
-    gap: 10px;
-}
-.upperemail img{
-    position: relative;
-    bottom: 10px;
-    width: 30px;
 }
 
+.navLists li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
 
-@media screen and (max-width: 600px) {
-    .upperIcons h3{
-        font-size: 10px;
+.navLists li a:hover {
+    color: #62be62;
+}
+
+.navLists li span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background: #62be62;
+    transition: width 0.3s ease-in-out;
+}
+
+.navLists li a:hover span::after {
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menuIcon {
+        display: block;
     }
-    .upperIcons{
-        gap: 10px;
+
+    .navLists {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background: rgba(0, 0, 0, 0.9);
+        width: 50%;
+        height: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 0;
+        overflow: hidden;
+        transform: translateY(-100%);
+        transform-origin: top;
     }
-    .upperphone img{
-        width: 20px;
+
+    .navLists.active {
+        height: 50vh; 
+        transform: translateY(0); 
+        transition: transform 0.3s ease-in-out;
     }
-    .upperemail img{
-        width: 20px;
+
+    .navLists li a {
+        font-size: 18px;
     }
 }
 
-@media screen and (max-width: 320px) {
-    .logo img{
-        width: 40px;
+@media (max-width: 480px) {
+    .upperNavContainer {
+        padding: 15px 10px;
     }
-    .upperIcons{
-        margin-left: 10px;
+
+    .logo img {
+        width: 70px;
     }
-    .upperphone{
-        gap: 0px;
-    }
-    .upperphone img{
-        width: 15px;
-        margin-top: 10px;
-    }
-    .upperemail{
-        gap: 0px;
-    }
-    .upperemail img{
-        width: 15px;
-        margin-top: 10px;
+
+    .navLists li a {
+        font-size: 16px;
     }
 }

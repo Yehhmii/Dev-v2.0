@@ -1,11 +1,11 @@
 .homeContainer{
     background: linear-gradient(
-        to right, #eae0d5,
-        #2c3e50, #11110f
-    );
+            135deg, #11110f,
+            #2c3e50, #8b5e3c
+        );
     background-size: 400% 400%;
     animation: animate-background 10s infinite ease-in-out;
-    height: 700px;
+    height: 770px;
 }
 
 @keyframes animate-background {
@@ -41,14 +41,54 @@
     color: #62be62;
 }
 
-.homeImg img{
+.homeImg {
+    position: relative;
+    width: 500px;
+  }
+  
+  .homeImg .overlayHome {
+    position: absolute;
+    top: 80px;
+    right: 150px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    border-radius: 30px;
+    z-index: 1; /* Ensure the overlay sits above the image */
+  }
+  
+  .homeImg img {
     position: relative;
     top: 80px;
     right: 150px;
-    width: 400px;
+    width: 500px;
     border-radius: 30px;
-}
+    opacity: 0; /* Initially hidden */
+    transform: translateX(-50px); /* Start slightly off-screen */
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .homeImg img.in-view {
+    opacity: 1; /* Fully visible */
+    transform: translateX(0); /* Slide into view */
+  }
+  
+  .textDivs {
+    opacity: 0; /* Initially hidden */
+    transform: translateX(50px); /* Start slightly off-screen to the right */
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .textDivs.in-view {
+    opacity: 1; /* Fully visible */
+    transform: translateX(0); /* Slide into view */
+  }
 
+@media  screen and (max-width: 1024px) {
+    .homeImg{
+        left: 100px;
+    }
+}
 
 @media  screen and (max-width: 950px) {
     .homeContainer{
@@ -61,8 +101,17 @@
     .homeText{
         width: 100px !important;
     }
+    .homeImg{
+        width: 400px;
+    }
     .homeImg img{
-        left: 150px;
+        width: 400px;
+        top: 0px;
+        left: 100px;
+    }
+    .homeImg .overlayHome{
+        top: 0px;
+        left: 100px;
     }
 }
 
@@ -70,14 +119,38 @@
     .hometext{
         margin-left: 50px;
     }
+    .homeImg{
+        width: 300px;
+    }
     .homeImg img{
         width: 300px;
-        left: 30px;
+        left: 0px;
+    }
+    .homeImg .overlayHome{
+        left: 0px;
     }
 }
-
-@media  screen and (max-width: 320px) {
+@media  screen and (max-width: 410px){
+    .homeImg{
+        width: 270px;
+    }
     .homeImg img{
         width: 270px;
+        left: -20px;
+    }
+    .homeImg .overlayHome{
+        left: -20px;
+    }
+}
+@media  screen and (max-width: 320px) {
+    .homeImg{
+        width: 270px;
+    }
+    .homeImg img{
+        width: 270px;
+        left: -70px;
+    }
+    .homeImg .overlayHome{
+        left: -70px;
     }
 }

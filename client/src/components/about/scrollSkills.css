@@ -1,0 +1,66 @@
+.scrollContainer {
+    width: 80%;
+    overflow: hidden;
+    margin: 30px auto;
+    position: relative;
+    background: linear-gradient(135deg, #2c3e50, #8b5e3c);
+    border-radius: 10px;
+    padding: 20px 0;
+    cursor: pointer;
+  }
+  
+/* Wrapper for scrolling images */
+.scrollWrapper {
+    display: flex;
+    gap: 20px;
+    animation: scroll 20s linear infinite;
+  }
+  
+  /* Image container styles */
+  .imageContainer {
+    flex: 0 0 auto;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+  
+  /* Hover effect: pops out and adds shadow */
+  .imageContainer:hover {
+    transform: scale(1.3);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Keyframes for continuous scrolling */
+  @keyframes scroll {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%); /* Move through half the content, including the duplicate */
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .imageContainer {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .imageContainer {
+      width: 60px;
+      height: 60px;
+    }
+  }

@@ -8,7 +8,9 @@ import git from "../../images/github.svg";
 import phone from "../../images/telephone.svg";
 import envelope from "../../images/envelope-at.svg"
 import pointlocation from "../../images/geo.svg";
+import Tiktok from "../../images/tiktok.svg"
 import { Element } from 'react-scroll';
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
@@ -25,8 +27,8 @@ export default function Footer() {
             <div className='usefulLink'>
                 <h4 className='use'>USEFULL LINKS</h4>
                 <div className='links'>
-                    <a href="">Home</a>
-                    <a href="">About</a>
+                    <a href="/">Home</a>
+                    <a href="/about">About</a>
                     <a href="">Skills</a>
                     
                 </div>
@@ -34,10 +36,26 @@ export default function Footer() {
             <div className='followUs'>
               <h5 className='US'>Follow Us</h5>
               <div className='followContainer'>
-                <div className='linkin'><img src={lin} alt="" /></div>
-                <div className='linkin'><img src={ig} alt="" /></div>
-                <div className='linkin'><img src={fb} alt="" /></div>
-                <div className='linkin'><img src={git} alt="" /></div>
+                <div className='linkin'>
+                  <Link to='https://www.linkedin.com/in/abhulimen-francisco-4928a0294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'>
+                    <img src={lin} alt="" />
+                  </Link>
+                </div>
+                <div className='linkin'>
+                  <Link to='https://www.instagram.com/yehhmii/profilecard/?igsh=MXc1NjBwZHZ3ZDlqZw=='>
+                    <img src={ig} alt="" />
+                  </Link>
+                </div>
+                <div className='linkin'>
+                  <Link to='https://www.tiktok.com/@yehhmiicapguy?_t=ZM-8spD2HQzx25&_r=1'>
+                    <img src={Tiktok} alt="" />
+                  </Link>
+                </div>
+                <div className='linkin'>
+                  <Link to='https://github.com/Yehhmii'>
+                    <img src={git} alt="" />
+                  </Link>
+                </div>
               </div>
             </div>
             <Element name='targetContact'>
@@ -46,7 +64,9 @@ export default function Footer() {
               <div className='contactInfo changeSvg'>
                 <p className='footP'><img src={pointlocation} alt="location" /> 123 Street, Abuja, Nigeria</p>
                 <p className='footP'><img src={phone} alt="phone" /> +2348158619465</p>
+                <a href="mailto:yehhmiihithub@gmail.com" style={{ textDecoration: 'none', color: 'inherit' }}>
                 <p className='footP'><img src={envelope} alt="envelop" /> yehhmiihithub@gmail.com</p>
+                </a>
               </div>
             </div>
             </Element>
@@ -54,7 +74,7 @@ export default function Footer() {
         </div>
         <div className='copyright'>
           <p className='cpp'>Copyright © <span className='cp'>YBK</span>. All Rights Reserved.</p>
-          <p className='cpp'>Designed by <span className='cp'>YTech-City</span></p>
+          <p className='cpp'>Designed by <span className='cp'>YTexh-City 2024</span></p>
         </div>
         
     </div>

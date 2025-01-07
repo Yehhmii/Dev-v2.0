@@ -29,8 +29,8 @@ export default function Skills() {
     <div className="clipCardContainer">
         <Element name='target'>
         <div className="clipHeading">
-        <h3>Skills</h3>
-      </div>
+          <h3>Skills</h3>
+        </div>
         </Element>
 
       <div className="mainClipsContainer">
