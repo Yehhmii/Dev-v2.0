@@ -6,7 +6,7 @@
     font-size:1rem;
     color: #ffffff;
     overflow: hidden;
-    margin-top: 140px;
+    margin-top: 50px;
 }
 
 .animatedText {
@@ -30,6 +30,7 @@
 
 @media  screen and (max-width: 350px) {
     .textContainer{
+         margin-top: 0px;
         
         padding-top: 120px;
     }

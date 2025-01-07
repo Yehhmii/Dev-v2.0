@@ -39,7 +39,9 @@
 .textDivs p{
     color: #62be62;
 }
-
+.textANIME{
+    position: relative;
+}
 .homeImg {
     position: relative;
     width: 500px;
@@ -116,6 +118,7 @@
 
 @media  screen and (max-width: 635px) {
     .hometext{
+        margin-top: 50px;
         margin-left: 50px;
     }
     .homeImg{
