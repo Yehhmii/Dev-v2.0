@@ -23,6 +23,13 @@ import py1 from '../../images/py1.png';
 import py2 from '../../images/py2.png';
 import game1 from '../../images/game1.png';
 import game2 from '../../images/game2.png';
+import unispot from '../../images/unispot.png';
+import unispot3 from '../../images/unispot3.png';
+import unispot4 from '../../images/unispot4.png';
+import unidemo from '../../images/unidemo.png';
+import unidemo2 from '../../images/unidemo2.png';
+import unidemo3 from '../../images/unidemo3.png';
+import unidemo4 from '../../images/unidemo4.png';
 
 const projectData = [
     {
@@ -54,6 +61,20 @@ const projectData = [
       name: 'Anime Royal Rumble',
       imgSrc: [game1, game2],
       description: "An interactive browser-based game built entirely with JavaScript, HTML5, and CSS3. The game leverages the Canvas API for smooth animations and dynamic gameplay. Featuring engaging mechanics, responsive controls, and captivating visuals, this project showcases the potential of JavaScript in creating rich, user-friendly gaming experiences.",
+    },
+    {
+      id: 6,
+      name: 'UniSpot',
+      imgSrc: [unispot, unispot3, unispot4],
+      description: "A landing page designed to showcase the features and functionalities of UniSpot, a mobile application that was built for students to be able to connect, collaborate and earn while on campus. The landing page is designed to be visually appealing and user-friendly, with a focus on highlighting the key features of the app. The page includes sections for testimonials, features, and a call-to-action to download the app.",
+      url: "https://unispot.vercel.app/",
+    },
+    {
+      id: 7,
+      name: 'UniDemo',
+      imgSrc: [unidemo, unidemo2, unidemo3, unidemo4],
+      description: "A university demo website that showcases the features and functionalities of a university, from course offerings to campus facilities. The website is designed to be user-friendly and visually appealing, with a focus on providing information to prospective students and parents. The website includes sections for admissions, academics, campus life, and a contact form for inquiries.",
+      url: "https://yehhmii.github.io/YehhmiiUnidemo.com/contact",
     },
   ];
   

@@ -6,6 +6,8 @@ import project2 from '../../images/Music1.png'
 import project3 from '../../images/flight1.png'
 import project4 from '../../images/py2.png'
 import project5 from '../../images/game1.png'
+import project6 from '../../images/unispot.png'
+import project7 from '../../images/unidemo.png'
 
 
 export default function Projects() {
@@ -17,6 +19,8 @@ export default function Projects() {
     { id: 3, name: 'PlutoAirs', imgSrc: project3, link: '/projects/airline-reservation' },
     { id: 4, name: 'Python Challenge Game', imgSrc: project4, link: '/projects/python-game' },
     { id: 5, name: 'Anime Royal Rumble', imgSrc: project5, link: '/projects/royal-rumble' },
+    { id: 6, name: 'UniSpot', imgSrc: project6, link: '/projects/unispot' },
+    { id: 7, name: 'UniDemo', imgSrc: project7, link: '/projects/unidemo' },
   ];
 
   // Auto-scroll logic

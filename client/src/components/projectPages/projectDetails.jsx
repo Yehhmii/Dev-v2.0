@@ -17,6 +17,7 @@ const ProjectDetails = ({ project }) => {
                 ))}
             </div>
             <p>{project.description}</p>
+            <h2> <a href={project.url}>Go Live✔</a></h2>
             <div>
                 <Projectbtn />
             </div>

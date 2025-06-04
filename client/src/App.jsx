@@ -9,6 +9,8 @@ import Airline from './components/projectPages/airline';
 import Music from './components/projectPages/music';
 import Game from './components/projectPages/game';
 import Python from './components/projectPages/python';
+import Unispot from './components/projectPages/unispot';
+import Unidemo from './components/projectPages/unidemo';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -17,7 +19,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false); // After 3 seconds, set loading to false
-    }, 3000); // Adjust the time to how long the loading should last
+    }, 3000); // loading timer
   }, []);
 
   return (
@@ -34,6 +36,8 @@ function App() {
             <Route path='/projects/airline-reservation' Component={Airline}></Route>
             <Route path='/projects/python-game' Component={Python}></Route>
             <Route path='/projects/royal-rumble' Component={Game}></Route>
+            <Route path='/projects/unispot' Component={Unispot}></Route>
+            <Route path='/projects/unidemo' Component={Unidemo}></Route>
           </Routes>
         </BrowserRouter>
       )}
